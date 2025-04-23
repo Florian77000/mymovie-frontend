@@ -9,7 +9,7 @@ import styles from "../styles/Home.module.css";
 function Home() {
   const [movies, setMovies] = useState([]);
   useEffect(() => {
-    fetch("mymovie-backend-bice.vercel.app/movies")
+    fetch("https://mymovie-backend-bice.vercel.app/movies")
       .then((response) => response.json())
       .then((data) => {
         setMovies(data.movies);
